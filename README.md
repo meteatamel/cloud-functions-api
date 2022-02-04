@@ -38,7 +38,7 @@ Enable required services for API Gateway and create a `greeter-api` API:
 Create an API config using the OpenAPI spec to define which path goes to which
 function.
 
-We'll use [openapi2-functions.yaml] as a starter but replace `REGION` and
+We'll use [openapi2-functions.yaml](openapi2-functions.yaml) as a starter but replace `REGION` and
 `PROJECT_ID` with real values. This definition routes `/greeter/hello` to the
 hello function and `/greeter/bye` to the bye function.
 
