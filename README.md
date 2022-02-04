@@ -63,13 +63,13 @@ a call with `/greeter/hello` and `/greeter/bye` paths:
 ./5_test_gateway.sh
 ```
 
-You should see the following output:
+You should see something similar:
 
 ```sh
 # Test hello
-curl https://$DEFAULT_HOST/greeter/hello
+curl https://greeter-gateway-5abbajef.ew.gateway.dev/greeter/hello
 Hello, World
 # Test bye
-curl https://$DEFAULT_HOST/greeter/bye
+curl https://greeter-gateway-5abbajef.ew.gateway.dev/greeter/bye
 Bye, World%
 ```

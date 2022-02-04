@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-set -v
+set -x
 
 DIR="$(dirname "$0")"
 . "${DIR}/config"
