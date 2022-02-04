@@ -1,0 +1,23 @@
+{
+  "name": "cloud-functions-api",
+  "version": "1.0.0",
+  "description": "A sample showing how to use multiple Cloud Functions with API Gateway",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "functions-framework --target=helloWorld"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meteatamel/cloud-functions-api.git"
+  },
+  "author": "Mete Atamel",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/meteatamel/cloud-functions-api/issues"
+  },
+  "homepage": "https://github.com/meteatamel/cloud-functions-api#readme",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^2.1.1"
+  }
+}

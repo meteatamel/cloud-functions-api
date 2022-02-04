@@ -1,0 +1,32 @@
+swagger: '2.0'
+info:
+  title: greeter-api
+  description: Sample API on API Gateway with 2 Google Cloud Functions backends
+  version: 1.0.0
+schemes:
+  - https
+produces:
+  - application/json
+paths:
+  /greeter/hello:
+    get:
+      summary: Greet a user
+      operationId: hello
+      x-google-backend:
+        address: https://REGION-PROJECT_ID.cloudfunctions.net/helloWorld
+      responses:
+        '200':
+          description: A successful response
+          schema:
+            type: string
+  /greeter/bye:
+    get:
+      summary: Greet a user
+      operationId: bye
+      x-google-backend:
+        address: https://REGION-PROJECT_ID.cloudfunctions.net/byeWorld
+      responses:
+        '200':
+          description: A successful response
+          schema:
+            type: string
