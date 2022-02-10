@@ -3,6 +3,8 @@
 In this sample, you will create an API with API Gateway where each path is
 handled by a different Cloud Function.
 
+![API Gateway with Cloud Functions](image.png)
+
 ## Cloud Functions
 
 We'll deploy two simple functions defined in [index.js](index.js):
