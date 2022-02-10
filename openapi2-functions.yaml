@@ -8,7 +8,7 @@ schemes:
 produces:
   - application/json
 paths:
-  /greeter/hello:
+  /hello:
     get:
       summary: Greet a user
       operationId: hello
@@ -19,7 +19,7 @@ paths:
           description: A successful response
           schema:
             type: string
-  /greeter/bye:
+  /bye:
     get:
       summary: Greet a user
       operationId: bye

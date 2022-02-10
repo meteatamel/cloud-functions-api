@@ -59,7 +59,7 @@ The final step is to deploy the API config to a gateway:
 ## Test
 
 To test the API, first fetch the default host name of the gateway and then make
-a call with `/greeter/hello` and `/greeter/bye` paths:
+a call with `/hello` and `/bye` paths:
 
 ```sh
 ./5_test_gateway.sh
@@ -69,9 +69,9 @@ You should see something similar:
 
 ```sh
 # Test hello
-curl https://greeter-gateway-5abbajef.ew.gateway.dev/greeter/hello
+curl https://greeter-gateway-5abbajef.ew.gateway.dev/hello
 Hello, World
 # Test bye
-curl https://greeter-gateway-5abbajef.ew.gateway.dev/greeter/bye
+curl https://greeter-gateway-5abbajef.ew.gateway.dev/bye
 Bye, World%
 ```
