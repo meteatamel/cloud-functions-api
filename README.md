@@ -41,8 +41,8 @@ Create an API config using the OpenAPI spec to define which path goes to which
 function.
 
 We'll use [openapi2-functions.yaml](openapi2-functions.yaml) as a starter but replace `REGION` and
-`PROJECT_ID` with real values. This definition routes `/greeter/hello` to the
-hello function and `/greeter/bye` to the bye function.
+`PROJECT_ID` with real values. This definition routes `/hello` to the
+hello function and `/bye` to the bye function.
 
 ```sh
 ./3_create_api_config.sh
@@ -69,9 +69,9 @@ You should see something similar:
 
 ```sh
 # Test hello
-curl https://greeter-gateway-5abbajef.ew.gateway.dev/hello
+curl https://greeter-gateway-5dvbajef.ew.gateway.dev/hello
 Hello, World
 # Test bye
-curl https://greeter-gateway-5abbajef.ew.gateway.dev/bye
+curl https://greeter-gateway-5dvbajef.ew.gateway.dev/bye
 Bye, World%
 ```
